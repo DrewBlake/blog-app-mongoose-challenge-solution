@@ -73,6 +73,7 @@ describe('BlogPost API resource', function() {
         .get('/posts')
         .then(function(_res) {
           // so subsequent .then blocks can access response object
+          //showing contents of _res body returned from get('/posts')
           console.log(_res.body);
           res = _res;
           expect(res).to.have.status(200);
